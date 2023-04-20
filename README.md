@@ -17,3 +17,13 @@ To build your project use the `build.sh` script inside the root folder. You migh
 ```
 chmod +x build.sh
 ```
+
+## Include Rust
+
+To add a new Rust library run the following command:
+
+```
+cargo new --lib rust_lib
+```
+
+You will also need to link the Rust library to the CPP code. This can be done inside of the `CMakeLists.txt` file.

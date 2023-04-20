@@ -3,6 +3,9 @@
 # Ignore everything by default
 *
 
+# Now, whitelist anything that's a directory
+!*/
+
 # Include specific file types (C++ and Rust)
 !*.cpp
 !*.hpp
@@ -13,13 +16,13 @@
 !*.toml
 
 # Include specific directories (e.g., src and include)
-!/src/
-!/include/
-!/rust_module/
+build/
 
 # Include specific files (e.g., README, LICENSE, etc.)
 !README.*
 !LICENSE
 !.gitignore
 !CMakeLists.txt
+
+!build.sh
 
