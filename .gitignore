@@ -1,0 +1,25 @@
+# .gitignore
+
+# Ignore everything by default
+*
+
+# Include specific file types (C++ and Rust)
+!*.cpp
+!*.hpp
+!*.h
+!*.cc
+!*.c
+!*.rs
+!*.toml
+
+# Include specific directories (e.g., src and include)
+!/src/
+!/include/
+!/rust_module/
+
+# Include specific files (e.g., README, LICENSE, etc.)
+!README.*
+!LICENSE
+!.gitignore
+!CMakeLists.txt
+
