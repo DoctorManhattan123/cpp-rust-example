@@ -10,3 +10,6 @@ mkdir -p build
 cd build
 cmake ..
 make
+
+cd ..
+./build/my_cpp_project
