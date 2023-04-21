@@ -5,7 +5,9 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_BUILD_TYPE Release)
 
-add_executable(my_cpp_project src/main.cpp)
+include_directories(include)
+
+add_executable(my_cpp_project src/main.cpp src/my_cpp_lib.cpp)
 
 # Link the Rust library
 set(RUST_LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/rust_lib/target/release")

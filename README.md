@@ -5,7 +5,7 @@
 ### Arch
 
 ```
-sudo pacman -S base-devel cmake
+sudo pacman -S base-devel cmake clang
 ```
 
 ## Build
