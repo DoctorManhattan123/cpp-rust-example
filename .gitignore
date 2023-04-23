@@ -22,4 +22,4 @@
 !LICENSE
 !.gitignore
 !CMakeLists.txt
-
+!build.sh
