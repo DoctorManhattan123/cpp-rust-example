@@ -12,4 +12,4 @@ cmake ..
 make
 
 cd ..
-./build/my_cpp_project
+./build/main
