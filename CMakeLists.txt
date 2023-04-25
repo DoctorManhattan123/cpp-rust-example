@@ -7,9 +7,9 @@ set(CMAKE_BUILD_TYPE Release)
 
 include_directories(include)
 
-add_executable(my_cpp_project src/main.cpp src/my_cpp_lib.cpp)
+add_executable(main src/main.cpp src/my_cpp_lib.cpp)
 
 # Link the Rust library
 set(RUST_LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/rust_lib/target/release")
 find_library(RUST_LIB rust_lib HINTS "${RUST_LIB_DIR}")
-target_link_libraries(my_cpp_project PRIVATE "${RUST_LIB}")
+target_link_libraries(main PRIVATE "${RUST_LIB}")
